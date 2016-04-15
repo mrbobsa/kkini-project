@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# timezone error 해결위한 gem
+# 윈도우즈 로컬 작업시 timezone error 해결위한 gem
 gem 'tzinfo-data'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
