@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'materialize-sass'
+
 # 윈도우즈 로컬 작업시 timezone error 해결위한 gem
 gem 'tzinfo-data'
 
