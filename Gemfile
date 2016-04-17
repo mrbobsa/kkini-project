@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 # 윈도우즈 로컬 작업시 timezone error 해결위한 gem
 gem 'tzinfo-data'
-
+# 노코기리
+gem 'nokogiri'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
