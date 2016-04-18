@@ -1,0 +1,6 @@
+@import "materialize/components/color";
+$primary-color: color("shades", "white") !default;
+$navbar-font-color: color("grey","base") !default;
+$tabs-text-color: color("grey","base") !default;
+$footer-bg-color: color("grey","lighten-4") !default;
+@import 'materialize';
