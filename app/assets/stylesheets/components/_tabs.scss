@@ -31,7 +31,6 @@
 
     a {
       color: $tabs-text-color;
-      
       display: block;
       width: 100%;
       height: 100%;
@@ -52,6 +51,7 @@
       cursor: default;
     }
   }
+  
   .indicator {
     position: absolute;
     bottom: 0;
