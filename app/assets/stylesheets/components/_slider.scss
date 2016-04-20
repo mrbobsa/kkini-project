@@ -53,6 +53,16 @@
         width: 70%;
         opacity: 0;
 
+        h3 {
+        font-family: 'Nanum Myeongjo';
+        letter-spacing: -2px;
+        line-height: 140%
+        }
+
+        .light {
+        font-size: 14px;
+        }
+
         p { color: $slider-bg-color-light; }
       }
 
