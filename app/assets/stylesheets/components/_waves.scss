@@ -8,7 +8,11 @@
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
 
-
+.waves-effect.waves-brown .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #93DCCE;
+    }
 .waves-effect {
     position: relative;
     cursor: pointer;
