@@ -33,9 +33,9 @@ class WelcomeController < ApplicationController
       @arr_all.each do |arr_each|
       
               xml_intodb = Course.new
-              xml_intodb.code = arr_each.at(1)
-              xml_intodb.university = arr_each.at(2)
-              xml_intodb.title = arr_each.at(0)
+              xml_intodb.code = arr_each.at(0)
+              xml_intodb.university = arr_each.at(1)
+              xml_intodb.title = arr_each.at(2)
               xml_intodb.release_date = arr_each.at(3)
               xml_intodb.save
       end
