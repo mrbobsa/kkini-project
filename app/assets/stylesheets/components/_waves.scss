@@ -8,7 +8,7 @@
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
 
-.waves-effect.waves-brown .waves-ripple {
+.waves-effect.waves-brown.waves-ripple {
      /* The alpha value allows the text and background color
      of the button to still show through. */
       background-color: #93DCCE;
@@ -82,7 +82,7 @@
       background-color: rgba(76, 175, 80, 0.70);
     }
     &.waves-teal .waves-ripple {
-      background-color: rgba(0, 150, 136, 0.70);
+      background-color: #93DCCE;
     }
 
     // Style input button bug.
