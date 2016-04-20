@@ -20,6 +20,7 @@ nav {
   .nav-wrapper {
     position: relative;
     height: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(170,170,170,0.50);
   }
 
   @media #{$large-and-up} {
@@ -107,8 +108,8 @@ nav {
       }
 
       &:hover {
-        background-color: rgba(0,0,0,.1);
-        font-color: #4C9994;
+        background-color: #94DDCE;
+        color: #fff;
       }
     }
 
