@@ -2,8 +2,8 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
   # 호스트 url바꿔야 함!!
-  config.action_mailer.default_url_options = { host: 'pass-path-jw-jaeuk-yoo.c9users.io/', port: 80 }
-  
+  config.action_mailer.default_url_options = { host: 'passpath-git-seongahkim-1.c9users.io/', port: 80 }
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
