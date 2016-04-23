@@ -57,4 +57,14 @@ class WelcomeController < ApplicationController
   
   def search_in
   end
+  
+  # Just for test
+  def kmooc
+    url = "http://www.kmooc.kr/"
+
+    crawler = KmoocCrawler.new
+    list = crawler.crawl(url)
+     
+    render text: list
+  end
 end
