@@ -90,8 +90,8 @@ class WelcomeController < ApplicationController
         university: course[:organization],
         title: course[:title],
         release_date: release_date,
-        # image: course[:image],
-        # link: course[:link],
+        image: course[:image],
+        url: course[:link],
       })
     end
     

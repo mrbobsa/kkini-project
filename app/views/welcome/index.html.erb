@@ -79,17 +79,19 @@
       <% @course_detail.each do |course_each|%>  
         <div class="col s12 m4 l3">
           <div class="card small">
-            <div class="card-image">
-              <img src="/assets/sample.png">
-              <span class="card-title"><%=course_each.title%></span>
+            <%= link_to course_each.url, target: '_blank' do %>
+              <div class="card-image">
+                <%= image_tag course_each.image %>
+                <span class="card-title"><%=course_each.title%></span>
+              </div>
+              <div class="card-content">
+                <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
+              </div>
+              <div class="card-action">
+                <a href="#">스터디 신청하기!</a>
+              </div>
             </div>
-            <div class="card-content">
-              <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
-            </div>
-            <div class="card-action">
-              <a href="#">스터디 신청하기!</a>
-            </div>
-          </div>
+          <% end %>
         </div>
       <%end%>
       </div>
