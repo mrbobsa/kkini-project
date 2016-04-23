@@ -4,3 +4,7 @@ $navbar-font-color: color("grey","base") !default;
 $tabs-text-color: color("grey","base") !default;
 $footer-bg-color: color("grey","lighten-4") !default;
 @import 'materialize';
+
+.card p {
+    color: rgba(0, 0, 0, 0.87) !important;
+}

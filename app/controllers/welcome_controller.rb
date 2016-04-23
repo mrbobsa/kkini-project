@@ -67,4 +67,35 @@ class WelcomeController < ApplicationController
      
     render text: list
   end
+  
+  # Just for test2
+  def kmooc_refill
+    # Warning!!!
+    Course.destroy_all
+    
+    url = "http://www.kmooc.kr/"
+
+    crawler = KmoocCrawler.new
+    list = crawler.crawl(url)
+    
+    list.each do |course|
+      release_date = if course[:opened_at] == nil
+        nil
+      else
+        course[:opened_at].strftime("%Y.%m.%d")
+      end
+      
+      Course.create!({
+        code: course[:code],
+        university: course[:organization],
+        title: course[:title],
+        release_date: release_date,
+        image: course[:image],
+        url: course[:link],
+      })
+    end
+    
+    render text: "Success!"
+    
+  end
 end
