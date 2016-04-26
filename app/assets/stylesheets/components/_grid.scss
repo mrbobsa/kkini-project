@@ -144,3 +144,22 @@
     }
   }
 }
+
+.indexrow {
+  background-color: rgba(255, 255, 255, 0.63);
+  margin: 0 auto;
+  padding: 5px;
+  max-width: 960px;
+  height: 60px;
+  border: 1px solid;
+  border-color: lightgrey;
+  
+  .gobtn {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin: 10px auto;
+    background-color: #26a69a;
+    text-align: center;
+  }
+}
