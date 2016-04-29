@@ -35,17 +35,34 @@
       <div class="col s6 m3">
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">perm_identity</i></a>
       </div>
-      
-    <div class="row center">
-      <h5 class="header col s12 light">과정 바 들어갈 곳</h5>
     </div>
-    <div class="row center">
-      <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal">Get Started</a>
-    </div>
-    <br><br>
-    </div>
+    <br>
+    
+    
+      <div class="indexrow" style="">
+        <div class="row">
+          <a href="/">
+            <div class="col s4 m4">
+              <p>&nbsp;&nbsp;강의 제목</p>
+            </div>
+            <div class="col s4 m5">
+              <div class="progress" style="margin: 20px 10px;padding: 3px;">
+                <div class="determinate" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="col s2 m2">
+              <p>70%</p>
+            </div>
+            <div class="col s2 m1">
+               <div class="gobtn" style=""><i class="material-icons" style="margin:3px;">play_arrow</i></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    
   </div>
 </div>
+
 
 <!--강의 탭-->
 <div class="container">
@@ -79,17 +96,19 @@
       <% @course_detail.each do |course_each|%>  
         <div class="col s12 m4 l3">
           <div class="card small">
-            <div class="card-image">
-              <img src="/assets/sample.png">
-              <span class="card-title"><%=course_each.title%></span>
+            <%= link_to course_each.url, target: '_blank' do %>
+              <div class="card-image">
+                <%= image_tag course_each.image %>
+                <span class="card-title"><%=course_each.title%></span>
+              </div>
+              <div class="card-content">
+                <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
+              </div>
+              <div class="card-action">
+                <a href="#">스터디 신청하기!</a>
+              </div>
             </div>
-            <div class="card-content">
-              <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
-            </div>
-            <div class="card-action">
-              <a href="#">스터디 신청하기!</a>
-            </div>
-          </div>
+          <% end %>
         </div>
       <%end%>
       </div>
