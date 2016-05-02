@@ -4,6 +4,10 @@ class WelcomeController < ApplicationController
       @course_detail = Course.all
   end
   
+  def log_in_process
+  end
+  
+  
   def courses_intodb
       
       @arr_code=Array.new
