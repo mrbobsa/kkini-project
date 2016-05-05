@@ -6,6 +6,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :university
       t.string :title
       t.string :release_date
+      t.string :category
 
       t.timestamps null: false
     end
