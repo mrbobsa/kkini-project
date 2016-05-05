@@ -20,7 +20,8 @@
 <body>
 
 <!--네브바(+모바일대응)-->
-<div class="navbar-fixed">
+
+<!--<div class="navbar-fixed">
   <nav>
     <div class="container">
         <a href="/" class="brand-logo"><img src="/assets/logo.png" style="margin-top:15px;"></a>
@@ -28,7 +29,6 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="/welcome/about">서비스에 대해</a></li>
           <li><a href="/welcome/rank_tutor">조교랭킹</a></li>
-        <!--if문으로 로그인과 로그아웃 구분-->
         <%if ppuser_signed_in? %>
           <li><a href="/ppusers/sign_out">로그아웃</a></li>
         <%else%>
@@ -48,12 +48,31 @@
         </ul>
     </div>
   </nav>
-</div>
+</div>-->
 
+    <div class="navbar-fixed" id="top">
+        <!--***Current Color for Opaque Navbar: class="orange"***-->
+        <nav class="orange">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <a class="brand-logo left-align">Header</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light" id="test">Item 1</a></li>
+                <li><a class="waves-effect waves-light">Item 2</a></li>
+                <li><a class="waves-effect waves-light">Item 3</a></li>
+                <li><a class="waves-effect waves-light">Item 4</a></li>
+            </ul>
+            <ul class="side-nav left-align" id="mobile-demo">
+                <li class="waves-effect waves-red" style="width: 100%;"><a>Item 1</a></li>
+                <li class="waves-effect waves-red" style="width: 100%;"><a>Item 2</a></li>
+                <li class="waves-effect waves-red" style="width: 100%;"><a>Item 3</a></li>
+                <li class="waves-effect waves-red" style="width: 100%;"><a>Item 4</a></li>
+            </ul>
+        </nav>
+    </div>
 
-
+<main>
 <%= yield %>
-
+</main>
 
 </body>
 
@@ -64,7 +83,7 @@
     <h6 class="grey-text text-base"  style="padding-bottom: 10px;">
       (주)끼니끼니   대표이사 김성아 | 관리책임자 김민성<br>
       03760 서울특별시 서대문구 이화여대길 52 | Tel 02-1234-5678 | 
-      email <a href="mailto:kkinikkini@gmail.com">kkinikkini@gmail.com</a><br><br>
+      email <a href="mailto:passpath42@gmail.com">passpath42@gmail.com</a><br><br>
       패쓰패쓰는 통신판매중개자이며 강의 및 모임에 대한 당사자 및 주최자가 아닙니다.
       따라서 패쓰패쓰는 등록된 강의 및 모임에 대하여 책임지지 않습니다.</h6>
   </div>      

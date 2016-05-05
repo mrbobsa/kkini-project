@@ -1,5 +1,9 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "로그인", new_session_path(resource_name) %><br />
+  <div class="actions">
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+      <%= link_to "로그인", new_session_path(resource_name) %><br />
+    </button>
+  </div>
 <% end -%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
