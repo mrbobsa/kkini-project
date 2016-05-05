@@ -23,13 +23,14 @@
 <!--내가 듣고 있는 강의들-->
 <%if ppuser_signed_in? %>
 <div class="section no-pad-bot" id="index-banner" style="min-height: 400px;">
-  <div class="container" style="background-image: url(/assets/bg_img_mountain.png);
-    min-height: 400px; width: 100%;
+  <div class="row" style="background-image: url(/assets/bg_img_mountain.png); min-height: 400px; width: 100%; background-size: cover;">
+  <!--<div class="container" style="background-image: url(/assets/bg_img_mountain.png);
+    min-height: 400px; width: 95%;
     background-size: cover;
     background-position-x: 50%;
-    background-position-y: 100%;">
+    background-position-y: 100%;">-->
     <br>
-    <div class=row>
+    <div class="row">
       <div class="col s12 m6">
         <h5 class="header center teal-text">패쓰패쓰에 돌아온걸 화녕행</h5>
       </div>
@@ -169,8 +170,7 @@
       <div class="row">
         <div class="input-field col s11">
           <i class="material-icons prefix">search</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">강의 검색</label>
+          <input id="icon_prefix" type="text" class="validate" placeholder="강의 검색">
         </div>
       </div>
       
