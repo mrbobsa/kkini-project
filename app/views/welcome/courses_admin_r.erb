@@ -1,0 +1,6 @@
+<h1> courses_admin_r입니다.</h1>
+<%@course_detail.each do |x|%>
+<%=x.action%> : <%=x.code%> : <%=x.university%> : <%=x.title%> : <%=x.image%> : <a href="">update</a> : <a href="/">delete</a>
+<br>
+<%end%>
+<a href="/">main 화면</a>
