@@ -8,10 +8,27 @@ class WelcomeController < ApplicationController
       @course_detail = Course.all
   end
   
-  def courses_admin_update
+  def courses_admin_m
+      @course_each = Course.find(params[:id])
   end
   
-  def courses_admin_delete
+  def courses_admin_u
+      @course_each = Course.find(params[:id])
+      @course_each.code = params[:modi_code]
+      @course_each.university = params[:modi_university]
+      @course_each.title = params[:modi_title]
+      @course_each.image = params[:modi_image]
+      @course_each.category = params[:modi_category]
+      @course_each.save
+      
+      redirect_to "/welcome/courses_admin_r"
+  end
+  
+  def courses_admin_d
+      @course_each = Course.find(params[:id])
+      @course_each.destroy
+      
+      redirect_to "/welcome/courses_admin_r"
   end
   
   def 
@@ -105,6 +122,7 @@ class WelcomeController < ApplicationController
         release_date: release_date,
         image: course[:image],
         url: course[:link],
+        
       })
     end
     
