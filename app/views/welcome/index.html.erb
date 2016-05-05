@@ -1,4 +1,5 @@
-<!--메인 포토 슬라이더-->
+<!--현재유저쨩이 로그인한다면 없어질! 메인 포토 슬라이더-->
+<%unless ppuser_signed_in? %>
 <div class="slider">
   <ul class="slides">
     <li>
@@ -18,8 +19,9 @@
     </li>
   </ul>
 </div>
-
-<!--로그인하면 나오는 내가 듣고 있는 강의들-->
+<%end%>
+<!--내가 듣고 있는 강의들-->
+<%if ppuser_signed_in? %>
 <div class="section no-pad-bot" id="index-banner" style="min-height: 400px;">
   <div class="container" style="background-image: url(/assets/bg_img_mountain.png);
     min-height: 400px; width: 100%;
@@ -31,7 +33,7 @@
       <div class="col s12 m6">
         <h5 class="header center teal-text">패쓰패쓰에 돌아온걸 화녕행</h5>
       </div>
-      <div class="col s6 m3"><h5 class="header right black-text">하용용 님</h5></div>
+      <div class="col s6 m3"><h5 class="header right black-text"><%= current_ppuser.email%> 님</h5></div>
       <div class="col s6 m3">
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">perm_identity</i></a>
       </div>
@@ -146,7 +148,8 @@
       
   </div>
 </div>
-
+<%end%>
+<!--로그인끝-->
 
 <!--강의 탭-->
 <div class="container">
