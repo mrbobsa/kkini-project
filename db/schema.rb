@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160423124459) do
     t.string   "university"
     t.string   "title"
     t.string   "release_date"
+    t.string   "category"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "image"
