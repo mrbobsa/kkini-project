@@ -4,8 +4,17 @@ class WelcomeController < ApplicationController
       @course_detail = Course.all
   end
   
-  def log_in_process
+  def courses_admin_r
+      @course_detail = Course.all
   end
+  
+  def courses_admin_update
+  end
+  
+  def courses_admin_delete
+  end
+  
+  def 
   
   
   def courses_intodb
