@@ -20,35 +20,35 @@
 <body>
 
 <!--네브바(+모바일대응)-->
-<nav>
-  <div class="container">
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo"><img src="/assets/logo.png" style="margin-top:15px;"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/welcome/about">서비스에 대해</a></li>
-        <li><a href="/welcome/rank_tutor">조교랭킹</a></li>
-      <!--if문으로 로그인과 로그아웃 구분-->
-      <%if ppuser_signed_in? %>
-        <li><a href="/ppusers/sign_out">로그아웃</a></li>
-      <%else%>
-        <li><a href="/ppusers/sign_in">로그인</a></li>
-      <%end%>
-        <li><a href="/ppusers/sign_up">회원가입</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="/welcome/about">서비스에 대해</a></li>
-        <li><a href="/welcome/rank_tutor">조교랭킹</a></li>
-      <%if ppuser_signed_in? %>
-        <li><a href="/ppusers/sign_out">로그아웃</a></li>
-      <%else%>
-        <li><a href="/ppusers/sign_in">로그인</a></li>
-      <%end%>
-        <li><a href="/ppusers/sign_up">회원가입</a></li>
-      </ul>
+<div class="navbar-fixed">
+  <nav>
+    <div class="container">
+        <a href="/" class="brand-logo"><img src="/assets/logo.png" style="margin-top:15px;"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/welcome/about">서비스에 대해</a></li>
+          <li><a href="/welcome/rank_tutor">조교랭킹</a></li>
+        <!--if문으로 로그인과 로그아웃 구분-->
+        <%if ppuser_signed_in? %>
+          <li><a href="/ppusers/sign_out">로그아웃</a></li>
+        <%else%>
+          <li><a href="/ppusers/sign_in">로그인</a></li>
+        <%end%>
+          <li><a href="/ppusers/sign_up">회원가입</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/welcome/about">서비스에 대해</a></li>
+          <li><a href="/welcome/rank_tutor">조교랭킹</a></li>
+        <%if ppuser_signed_in? %>
+          <li><a href="/ppusers/sign_out">로그아웃</a></li>
+        <%else%>
+          <li><a href="/ppusers/sign_in">로그인</a></li>
+        <%end%>
+          <li><a href="/ppusers/sign_up">회원가입</a></li>
+        </ul>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 
 
