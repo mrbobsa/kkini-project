@@ -1,5 +1,4 @@
 class WelcomeController < ApplicationController
-  
   def index
       @course_detail = Course.all
   end
