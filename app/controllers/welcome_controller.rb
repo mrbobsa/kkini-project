@@ -88,6 +88,9 @@ class WelcomeController < ApplicationController
   def search_in
   end
   
+  def my_page
+  end
+  
   # Just for test
   def kmooc
     url = "http://www.kmooc.kr/"
