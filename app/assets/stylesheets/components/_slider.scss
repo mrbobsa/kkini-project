@@ -1,9 +1,13 @@
 
 .slider {
-  position: relative;
   height: 594px;
   width: 100%;
-
+  position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -64px;
+    
   // Fullscreen slider
   &.fullscreen {
     height: 100%;
