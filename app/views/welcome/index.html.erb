@@ -219,6 +219,29 @@
           </div>
           
           <div id="cat1" class="col s12">
+            <div class="row">
+              <% @course_detail.each do |course_each|%>
+                <!--카테고리 나눌 때 어떤 if문?-->
+                <div class="col s12 m4 l3">
+                  <div class="card small">
+                    <%= link_to course_each.url, target: '_blank' do %>
+                      <div class="card-image">
+                        <%= image_tag course_each.image %>
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title"><%=course_each.title%></span>
+                        <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">스터디 신청하기!</a>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+              <%end%>
+              </div>
+            </div>
+          
           </div>
           
           <div id="cat2" class="col s12">
@@ -234,7 +257,7 @@
           </div>
         
         </div>
-        
+             
     </div>
 
     <!--학교별 탭-->
