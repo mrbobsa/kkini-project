@@ -1,6 +1,14 @@
-<h1> courses_admin_r입니다.</h1>
-<%@course_detail.each do |x|%>
-<%=x.id%> : <%=x.code%> : <%=x.university%> : <%=x.title%> : <%=x.image%> : <%=x.category%> : <a href="/welcome/courses_admin_m/<%=x.id%>">update</a> : <a href="/welcome/courses_admin_d/<%=x.id%>">delete</a>
-<br>
-<%end%>
-<a href="/">main 화면</a>
+<div class="container">
+    <h1> courses_admin_r입니다.</h1>
+        <%@course_detail.each do |x|%>
+            <%=x.id%> : <%=x.code%> : <%=x.university%> : <%=x.title%> : <%=x.image%>
+                <%if x.category == nil%>
+                    : <b>"category를 지정하셔야 합니다."</b> :
+                <%else%>
+                    : <%=x.category%> :
+                <%end%>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/welcome/courses_admin_m/<%=x.id%>">update</a> : <a href="/welcome/courses_admin_d/<%=x.id%>">delete</a>
+            <br>
+        <%end%>
+    <a href="/">main 화면</a>
+</div>
