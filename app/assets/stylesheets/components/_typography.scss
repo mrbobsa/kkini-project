@@ -5,6 +5,9 @@ a {
 
 html{
   line-height: 1.5;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+  color: $off-black;
 
   @media only screen and (min-width: 0) {
     font-size: 14px;
@@ -17,10 +20,7 @@ html{
   @media only screen and (min-width: $large-screen) {
     font-size: 15px;
   }
-
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: normal;
-  color: $off-black;
+  
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
