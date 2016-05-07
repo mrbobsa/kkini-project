@@ -207,22 +207,31 @@
           <div class="col s12">
             <ul class="tabs">
               <li class="tab col s2" style="border-right: 1px solid #e0e0e0;">
-                <a class="waves-effect waves-teal" href="#cat1">인문∙사회</a></li>
+                <a class="waves-effect waves-teal" href="#category_id_01">인문∙사회</a></li>
               <li class="tab col s2"style="border-right: 1px solid #e0e0e0;">
-                <a class="waves-effect waves-teal" href="#cat2">경영∙경제</a></li>
+                <a class="waves-effect waves-teal" href="#category_id_02">경영∙경제</a></li>
               <li class="tab col s2" style="border-right: 1px solid #e0e0e0;">
-                <a class="waves-effect waves-teal" href="#cat3">과학∙공학</a></li>
+                <a class="waves-effect waves-teal" href="#category_id_03">과학∙공학</a></li>
               <li class="tab col s2" style="border-right: 1px solid #e0e0e0;">
-                <a class="waves-effect waves-teal" href="#cat4">예술</a></li>
-              <li class="tab col s2">
-                <a class="waves-effect waves-teal" href="#cat5">기타</a></li>
+                <a class="waves-effect waves-teal" href="#category_id_04">예술</a></li>
+              <li  class="tab col s2">
+                <a class="waves-effect waves-teal" href="#category_id_05">기타</a></li>
             </ul>
-          </div>
           
-          <div id="cat1" class="col s12">
-            <div class="row">
-              <% @course_detail.each do |course_each|%>
-                <!--카테고리 나눌 때 어떤 if문?-->
+        </div>
+        <!-- 클릭을 했을때 클릭된 밸류만 받아오기-->
+        <!-- 1. 인문사회를 클릭한다.-->
+        <!-- 1.1. div아이디가 인문사회로 바뀐다.-->
+        <!-- 2. 인문사회만 찾아 뿌린다.-->
+        
+        <%course_sorter = Hash.new%>
+        <%course_sorter = {"인문∙사회" => "category_id_01" , "경영 경제" => "category_id_02" , "과학∙공학" => "category_id_03" , "예술" => "category_id_04" , "기타" => "category_id_05"}%>
+        
+        <%course_sorter.each do |key, value|%>
+        
+        <div id = <%=value%>>
+          <div class="row">
+            <%if Course.where(category: key).each do |course_each|%>                 
                 <div class="col s12 m4 l3">
                   <div class="card small">
                     <%= link_to course_each.url, target: '_blank' do %>
@@ -236,31 +245,17 @@
                       <div class="card-action">
                         <a href="#">스터디 신청하기!</a>
                       </div>
-                    </div>
-                  <% end %>
+                    <%end%>    
+                  </div>
                 </div>
               <%end%>
-              </div>
             </div>
-          
           </div>
-          
-          <div id="cat2" class="col s12">
-          </div>
-          
-          <div id="cat3" class="col s12">
-          </div>
-          
-          <div id="cat4" class="col s12">
-          </div>
-          
-          <div id="cat5" class="col s12">
-          </div>
-        
-        </div>
+        <%end%>
+        <%end%>
+      </div>
              
     </div>
-
     <!--학교별 탭-->
     <div id="test3" class="col s12">
       <!--장르별 탭-->
