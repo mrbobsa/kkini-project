@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<course>
+		<code>KOCW.DKUK0001</code>
+		<university>단국대학교</university>
+		<title>교육심리</title>
+		<release_date>20160502</release_date>
+	</course>
+	<course>
+		<code>ku_hum_001</code>
+		<university>고려대학교</university>
+		<title>고전문헌과 역사문화</title>
+		<release_date>20160307</release_date>
+	</course>
+	<course>
+		<code>HYUARE4100k</code>
+		<university>한양대학교</university>
+		<title>건축공간론</title>
+		<release_date>20160401</release_date>
+	</course>
+	<course>
+		<code>KH101</code>
+		<university>경희대학교</university>
+		<title>세계시민교육, 지구공동사회의 시민으로 살기</title>
+		<release_date>20160404</release_date>
+	</course>
+	<course>
+		<code>HYUSOC1053k</code>
+		<university>한양대학교</university>
+		<title>정보사회학입문</title>
+		<release_date>20160401</release_date>
+	</course>
+	<course>
+		<code>HYUBUS3099k</code>
+		<university>한양대학교</university>
+		<title>경영데이터마이닝</title>
+		<release_date>20160401</release_date>
+	</course>
+	<course>
+		<code>HYUPAD3004k</code>
+		<university>한양대학교</university>
+		<title>정책학개론</title>
+		<release_date>20160401</release_date>
+	</course>
+	<course>
+		<code>KH102</code>
+		<university>경희대학교</university>
+		<title>호모 폴리티쿠스 : 우리가 만든 세계</title>
+		<release_date>20160404</release_date>
+	</course>
+	<course>
+		<code>SNU046.101k</code>
+		<university>서울대학교</university>
+		<title>우주와 생명</title>
+		<release_date>20160302</release_date>
+	</course>
+	<course>
+		<code>ku_phy_001</code>
+		<university>고려대학교</university>
+		<title>일반인을 위한 일반상대성이론</title>
+		<release_date>20160307</release_date>
+	</course>
+	<course>
+		<code>ku_cpx_001</code>
+		<university>고려대학교</university>
+		<title>Quantum Mechanics for IT/NT/BT</title>
+		<release_date>20160314</release_date>
+	</course>
+	<course>
+		<code>ku_soc_001</code>
+		<university>고려대학교</university>
+		<title>민법학입문</title>
+		<release_date>20160307</release_date>
+	</course>
+	<course>
+		<code>YSU_UCC01k</code>
+		<university>연세대학교</university>
+		<title>우주의 이해</title>
+		<release_date>20160321</release_date>
+	</course>
+	<course>
+		<code>PL_C01</code>
+		<university>부산대학교</university>
+		<title>생명의 프린키피아</title>
+		<release_date>20160307</release_date>
+	</course>
+	<course>
+		<code>GEDT011.01x</code>
+		<university>성균관대학교</university>
+		<title>창의적 발상</title>
+		<release_date>20160302</release_date>
+	</course>
+	<course>
+		<code>COS2034.01x</code>
+		<university>성균관대학교</university>
+		<title>논어</title>
+		<release_date>20160302</release_date>
+	</course>
+	<course>
+		<code>SNU044.008k</code>
+		<university>서울대학교</university>
+		<title>경제학 들어가기</title>
+		<release_date>20160302</release_date>
+	</course>
+	<course>
+		<code>EW10771K</code>
+		<university>이화여자대학교</university>
+		<title>인간행위와 사회구조</title>
+		<release_date>20160301</release_date>
+	</course>
+	<course>
+		<code>EW11151K</code>
+		<university>이화여자대학교</university>
+		<title>영화 스토리텔링의 이해</title>
+		<release_date>20160301</release_date>
+	</course>
+	<course>
+		<code>EW36387K</code>
+		<university>이화여자대학교</university>
+		<title>건축으로 읽는 사회문화사</title>
+		<release_date>20160301</release_date>
+	</course>
+	<course>
+		<code>EW10164K</code>
+		<university>이화여자대학교</university>
+		<title>현대물리학과 인간사고의 변혁</title>
+		<release_date>20160301</release_date>
+	</course>
+	<course>
+		<code>YSU_KOR02k</code>
+		<university>연세대학교</university>
+		<title>문학이란 무엇인가</title>
+		<release_date>20151102</release_date>
+	</course>
+	<course>
+		<code>KCS470</code>
+		<university>한국과학기술원</university>
+		<title>인공지능과 기계학습</title>
+		<release_date>20151102</release_date>
+	</course>
+	<course>
+		<code>YSU_UCC01k</code>
+		<university>연세대학교</university>
+		<title>우주의 이해</title>
+		<release_date>20151102</release_date>
+	</course>
+	<course>
+		<code>DEMOk</code>
+		<university>K-MOOC</university>
+		<title>K-MOOC 시작하기</title>
+		<release_date>20151001</release_date>
+	</course>
+</root>

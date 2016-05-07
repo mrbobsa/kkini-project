@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'figaro'
+# 마테리얼라이즈
 gem 'materialize-sass'
-
 # 윈도우즈 로컬 작업시 timezone error 해결위한 gem
 gem 'tzinfo-data'
 # 노코기리
