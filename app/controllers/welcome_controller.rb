@@ -1,8 +1,6 @@
 class WelcomeController < ApplicationController
   def index
       @course_detail = Course.all
-      #아래에 뭐라고 쳐야될질 모르겠어요
-      #@course_each.category = params[:modi_category]
   end
   
   def courses_admin_r
