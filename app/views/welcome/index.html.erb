@@ -1,25 +1,17 @@
 <!--현재유저쨩이 로그인한다면 없어질! 메인 포토 슬라이더-->
 <%unless ppuser_signed_in? %>
-<div class="slider fullscreen">
-  <ul class="slides">
-    <li>
-      <img src="/assets/slider_img1.jpg"> <!-- random image -->
-      <div class="caption left-align">
+<div class="parallax-container" style="height:595px;">
+  <div class="parallax">
+    <img src="/assets/slider_img1.jpg">
+      <div class="grey-text text-lighten-2 caption left-align" style="position: absolute; left: 10%; top: 30%; font-family: nanummyeongjo">
         <h2>혼자 가면 빨리가고<br>
         함께 가면 멀리간다</h2>
         <h5 class="grey-text text-lighten-2">아프리카 속담中</h5>
       </div>
-    </li>
-    <li>
-      <img src="/assets/slider_img2.jpg"> <!-- random image -->
-      <div class="caption center-align">
-        <h1 class="grey-text text-darken-3">Pass with<br>Pass Path</h1>
-        <h5 class="grey-text text-darken-1">Let's Pass</h5>
-      </div>
-    </li>
-  </ul>
+  </div>
 </div>
 <%end%>
+
 <!--내가 듣고 있는 강의들-->
 <%if ppuser_signed_in? %>
 <div class="section no-pad-bot" id="index-banner">
@@ -151,8 +143,7 @@
 <!--로그인끝-->
 
 <!--강의 탭-->
-<div style="position: absolute; top: 100%; z-index: -1; width: 100%;">
-  <div class="container">
+<div class="container">
   <div class="row">
     <div class="col s12 navopc-endchange">
       <ul class="tabs">
@@ -305,12 +296,12 @@
     
   </div>
 </div>
-</div>
 
 <script>
   $(document).ready(function(){
     $('.slider').slider({full_width: true});
     $('ul.tabs').tabs();
+    $('.parallax').parallax();
   });
     
 </script>
