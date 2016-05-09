@@ -110,10 +110,11 @@ nav.opaque {opacity:1;}
     a {
       transition: background-color .3s;
       font-size: 1rem;
-      color: $navbar-font-color;
+      color: white;
       display: inline-block;
       padding: 0 15px;
       cursor: pointer;
+      font-weight: bold;
 
       &.btn, &.btn-large, &.btn-flat, &.btn-floating {
         margin-top: -2px;
