@@ -5,10 +5,19 @@ class WelcomeController < ApplicationController
   
   def courses_admin_r
       @course_detail = Course.all
+      @course_each = Course.where(id: @course_detail.each_with_index)
   end
   
   def courses_admin_m
       @course_each = Course.find(params[:id])
+  end
+  
+  def courses_admin_direct_u
+      @course_each = Course.find(params[:id])
+      @course_each.category = params[:modi_category]
+      @course_each.save
+      
+      redirect_to "/welcome/courses_admin_r"
   end
   
   def courses_admin_u
