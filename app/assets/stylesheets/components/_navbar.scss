@@ -110,10 +110,11 @@ nav.opaque {opacity:1;}
     a {
       transition: background-color .3s;
       font-size: 1rem;
-      color: $navbar-font-color;
+      color: white;
       display: inline-block;
       padding: 0 15px;
       cursor: pointer;
+      font-weight: bold;
 
       &.btn, &.btn-large, &.btn-flat, &.btn-floating {
         margin-top: -2px;
@@ -169,7 +170,7 @@ nav.opaque {opacity:1;}
 // Fixed Navbar
 .navbar-fixed {
   position: relative;
-  height: $navbar-height-mobile;
+  // height: $navbar-height-mobile;
   z-index: 998;
 
   nav {
@@ -179,10 +180,10 @@ nav.opaque {opacity:1;}
 
 @media #{$medium-and-up} {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: $navbar-height;
+    // height: $navbar-height;
     line-height: $navbar-height;
   }
   .navbar-fixed {
-    height: $navbar-height;
+    // height: $navbar-height;
   }
 }
