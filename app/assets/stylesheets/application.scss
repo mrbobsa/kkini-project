@@ -24,5 +24,15 @@ a.brand-logo.left-align.hide-on-small-only.hide-on-large-only span{ font-size: 1
 }
 
 /*NEW CSS*/
-nav {opacity:1;transition:background-color 0.3s; background-color:transparent;}
-nav.opaque {opacity:1; background-color:white;}
+nav {
+  opacity:1;transition:background-color 0.3s; background-color:transparent;
+    
+  &.opaque {
+    opacity:1; background-color:white;
+    
+    a {
+      color:black;
+    }
+  }
+
+}
