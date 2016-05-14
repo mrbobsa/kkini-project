@@ -3,7 +3,7 @@ nav {
   @extend .z-depth-1;
   background-color: $primary-color;
   width: 100%;
-  height: $navbar-height-mobile;
+  height: 64px;
   line-height: $navbar-height-mobile;
 
   a { color: $navbar-font-color;
@@ -123,7 +123,7 @@ nav.opaque {opacity:1;}
       }
 
       &:hover {
-        color: #fff;
+        color: #26a69a;
       }
     }
 
