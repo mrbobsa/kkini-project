@@ -55,8 +55,10 @@ if (typeof(jQuery) === 'undefined') {
 		var scroll = $(window).scrollTop();
 		if (scroll > navStart) {
 			$('nav').addClass('opaque');
+			$("#change_logo").attr("src","/assets/navbar_logo2.svg");
 		} else {
-			$('nav').removeClass('opaque');  
+			$('nav').removeClass('opaque');
+			$("#change_logo").attr("src","/assets/navbar_logo3.svg");
 		}
 	});
 // t: current time, b: begInnIng value, c: change In value, d: duration

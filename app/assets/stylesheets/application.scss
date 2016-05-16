@@ -29,10 +29,6 @@ nav {
     
   &.opaque {
     opacity:1; background-color:white;
-
-    .brand_logo {
-      background-image:url(/assets/navbar_logo2.svg);
-    }
     a {
       color:#333;
     }
