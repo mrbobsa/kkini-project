@@ -44,7 +44,10 @@
       left: 0;
       right: 0;
       text-align: center;
-      background-color: #26a69a;
+      background-color:#4C9994;
+      &:hover {
+      	background-color:#94DDCE;
+      }
     }
   }
 
@@ -113,7 +116,7 @@
       transition: color .3s ease;
       text-transform: uppercase;
 
-      &:hover { color: $card-link-color-light; }
+      
     }
 
     & + .card-reveal {
