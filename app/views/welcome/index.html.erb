@@ -175,7 +175,7 @@
 
       <% @course_detail.each do |course_each|%>
         <div class="col s12 m4 l3">
-          <div class="card small">
+          <div class="card small" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
             <%= link_to course_each.url, target: '_blank' do %>
               <div class="card-image">
                 <%= image_tag course_each.image %>
