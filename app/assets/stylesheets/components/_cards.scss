@@ -12,7 +12,7 @@
 .card {
   position: relative;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  background-color: $card-bg-color;
+  background-color: #fafafa;
   transition: box-shadow .25s;
   border-radius: 2px;
   @extend .z-depth-1;
