@@ -2,11 +2,22 @@
 <%unless ppuser_signed_in? %>
 <div class="parallax-container" style="height:595px;">
   <div class="parallax">
-    <img src="/assets/slider_img1.jpg">
-      <div class="shades-text text-white caption left-align" style="position: absolute; left: 10%; top: 25%; font-family: nanummyeongjo">
-        <h2>혼자 가면 빨리가고<br>
-        함께 가면 멀리간다</h2>
-        <h5 class="grey-text text-lighten-4">아프리카 속담中</h5>
+    <!--<img src="/assets/slider_img1.jpg">-->
+      <div class="shades-text text-white caption left-align" style="position: absolute; top: 25%; font-family: 'Nanum Myeongjo', serif;text-shadow:0 0 0.5em #053735;">
+        <div class="row">
+          <div class="col s8 offset-s2 m12 offset-m5">
+            <p style="font-size: 3.56rem; margin:0; line-height:1.1;">
+              혼자 가면 빨리가고
+            </p>
+            <p style="font-size: 0.5rem;"></p>
+            <p style="font-size: 3.56rem; margin:0; line-height:1.1;">
+              함께 가면 멀리간다
+            </p>
+            <h5 class="grey-text text-lighten-4">
+              아프리카 속담中
+            </h5>
+          </div>
+        </div>
       </div>
   </div>
 </div>
@@ -14,7 +25,10 @@
 
 <!--내가 듣고 있는 강의들-->
 <%if ppuser_signed_in? %>
-<div class="section no-pad-bot" id="index-banner">
+<nav style="background-color:darkslategray;">
+</nav>
+
+<div class="section no-pad-bot navopc-endchange" id="index-banner">
   <div class="container" style="background-image: url(/assets/bg_img_mountain.png);
     width: 100%;
     height: 100%;
@@ -31,7 +45,7 @@
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">perm_identity</i></a>
       </div>
     </div>
-    
+
 <!--강의 퍼센트 표시-->
     <div class="indexrow" style="">
       <div class="row">
@@ -53,7 +67,7 @@
         </a>
       </div>
     </div><br>
-    
+
     <div class="indexrow" style="">
       <div class="row">
         <a href="/">
@@ -74,7 +88,7 @@
         </a>
       </div>
     </div><br>
-    
+
     <div class="indexrow" style="">
       <div class="row">
         <a href="/">
@@ -95,7 +109,7 @@
         </a>
       </div>
     </div><br>
-    
+
     <div class="indexrow" style="">
       <div class="row">
         <a href="/">
@@ -116,7 +130,7 @@
         </a>
       </div>
     </div><br>
-  
+
   <div class="indexrow" style="">
       <div class="row">
         <a href="/">
@@ -155,7 +169,7 @@
           <a class="waves-effect waves-teal" href="#test3">학교별</a></li>
       </ul>
     </div>
-    
+
     <!--검색창-->
       <div class="row">
         <div class="input-field col s12 m6 l4">
@@ -163,14 +177,14 @@
           <input id="icon_prefix" type="text" class="validate" placeholder="강의 검색">
         </div>
       </div>
-      
+
     <!--날짜별 탭 -->
     <div id="test1" class="col s12">
 
       <!--강의카드-->
       <div class="row">
 
-      <% @course_detail.each do |course_each|%>  
+      <% @course_detail.each do |course_each|%>
         <div class="col s12 m4 l3">
           <div class="card small">
             <%= link_to course_each.url, target: '_blank' do %>
@@ -182,7 +196,7 @@
                 <p><%=course_each.university%><br><%=course_each.code%><br><%=course_each.release_date%></p>
               </div>
               <div class="card-action">
-                <a href="#">스터디 신청하기!</a>
+                <a href="/welcome/course_info">스터디 신청하기!</a>
               </div>
             </div>
           <% end %>
@@ -208,21 +222,21 @@
               <li  class="tab col s2">
                 <a class="waves-effect waves-teal" href="#category_id_05">기타</a></li>
             </ul>
-          
+
         </div>
         <!-- 클릭을 했을때 클릭된 밸류만 받아오기-->
         <!-- 1. 인문사회를 클릭한다.-->
         <!-- 1.1. div아이디가 인문사회로 바뀐다.-->
         <!-- 2. 인문사회만 찾아 뿌린다.-->
-        
+
         <%course_sorter = Hash.new%>
         <%course_sorter = {"인문∙사회" => "category_id_01" , "경영∙경제" => "category_id_02" , "과학∙공학" => "category_id_03" , "예술" => "category_id_04" , "기타" => "category_id_05"}%>
-        
+
         <%course_sorter.each do |key, value|%>
-        
+
         <div id = <%=value%>>
           <div class="row">
-            <%if Course.where(category: key).each do |course_each|%>                 
+            <%if Course.where(category: key).each do |course_each|%>
                 <div class="col s12 m4 l3">
                   <div class="card small">
                     <%= link_to course_each.url, target: '_blank' do %>
@@ -236,7 +250,7 @@
                       <div class="card-action">
                         <a href="#">스터디 신청하기!</a>
                       </div>
-                    <%end%>    
+                    <%end%>
                   </div>
                 </div>
               <%end%>
@@ -245,7 +259,7 @@
         <%end%>
         <%end%>
       </div>
-             
+
     </div>
     <!--학교별 탭-->
     <div id="test3" class="col s12">
@@ -281,25 +295,25 @@
                 <a class="waves-effect waves-teal" href="#cat13">K-MOOC</a></li>
             </ul>
           </div>
-          
+
           <div id="cat1" class="col s12">
           </div>
-          
+
           <div id="cat2" class="col s12">
           </div>
-          
+
           <div id="cat3" class="col s12">
           </div>
-          
+
           <div id="cat4" class="col s12">
           </div>
-          
+
           <div id="cat5" class="col s12">
           </div>
-        
+
         </div>
     </div>
-    
+
   </div>
 </div>
 
@@ -308,5 +322,5 @@
     $('ul.tabs').tabs();
     $('.parallax').parallax();
   });
-    
+
 </script>
