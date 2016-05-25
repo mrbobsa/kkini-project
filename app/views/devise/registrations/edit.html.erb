@@ -4,27 +4,47 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :이메일 %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
-
+      
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div><%= resource.unconfirmed_email %> 계정의 이메일 확인을 기다리고 있습니다.</div>
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :패스워드 %> <i>(패스워드를 바꾸고 싶지 않으면 이 칸을 비워두세요.)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :패스워드확인 %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :현재비밀번호 %> <i>(변경내용을 승인하기 위해 현재 비밀번호를 입력해주세요.)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :이름 %><br />
+    <%= f.text_field :user_name, autofocus: true %>
+  </div>
+      
+  <div class="field">
+    <%= f.label :닉네임 %><br />
+    <%= f.text_field :nick_name, autofocus: true %>
+  </div>
+      
+  <div class="field">
+    <%= f.label :학생조교 %><br />
+    <%= f.text_field :identify_type, autofocus: true %>
+  </div>
+      
+  <div class="field">
+    <%= f.label :matching_number %><br />
+    <%= f.text_field :matching_number, autofocus: true %>
   </div>
 
   <div class="actions">
