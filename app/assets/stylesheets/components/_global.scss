@@ -405,7 +405,7 @@ thead {
 }
 
 td, th{
-  padding: 15px 5px;
+  padding: 10px 5px 10px 10px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
@@ -565,7 +565,9 @@ td, th{
         background-color: $collection-hover-bg-color;
       }
     }
+  
   }
+
 
   &.with-header {
     .collection-header {
@@ -581,6 +583,16 @@ td, th{
     }
   }
 
+  tr.collection-item{
+    transition: .25s;
+    color: $collection-link-color;
+    &:not(.active) {
+      &:hover {
+        background-color: $collection-hover-bg-color;
+      }
+    }
+  
+  }
 }
 // Made less specific to allow easier overriding
 .secondary-content {
