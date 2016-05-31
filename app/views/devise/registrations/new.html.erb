@@ -2,9 +2,9 @@
 <div class="container">
 
      <div class="row">
-        <div class="col s12 m6 navopc-endchange">
+        <div class="col s12 m6 offset-m3 navopc-endchange">
 
-          <h2 style="font-family:nanummyeongjo">회원가입</h2>
+          <h2 class="center-align" style="font-family:nanummyeongjo">회원가입</h2>
 
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <%= devise_error_messages! %>
@@ -49,24 +49,24 @@
         <%= f.label :이름 %><br />
         <%= f.text_field :user_name, autofocus: true %>
       </div>
-      
+
       <div class="field">
         <%= f.label :닉네임 %><br />
         <%= f.text_field :nick_name, autofocus: true %>
       </div>
-      
+
       <div class="field">
         <%= f.label :학생조교 %><br />
         <%= f.text_field :identify_type, autofocus: true %>
       </div>
-      
+
       <div class="field">
         <%= f.label :matching_number %><br />
         <%= f.text_field :matching_number, autofocus: true %>
       </div>
       <br>
       <br>
-        
+
         <div class="row">
           <div class="col s6">
             <div class="actions">
