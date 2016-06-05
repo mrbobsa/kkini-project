@@ -1,4 +1,4 @@
-<nav style="background-color:darkslategray;"></nav>
+<nav style="background-color:#228783;"></nav>
 <div class="container">
     <div class="row">
       <div class="col s12">
@@ -14,26 +14,26 @@
                 <%else%>
                     : <%=x.category%> :
                 <%end%>
-                
+
                 <form action="/welcome/courses_admin_direct_u/<%=x.id%>" method="POST">
                     &nbsp;&nbsp;&nbsp;&nbsp;category :
-                    
+
                     <input name="modi_category" type="radio" id="category_id_01_<%=x.id%>" value="인문∙사회">&nbsp;
                     <label for="category_id_01_<%=x.id%>">인문∙사회</label>
-                
+
                     <input name="modi_category" type="radio" id="category_id_02_<%=x.id%>" value="경영∙경제" />&nbsp;
                     <label for="category_id_02_<%=x.id%>">경영∙경제</label>
-               
+
                     <input name="modi_category" type="radio" id="category_id_03_<%=x.id%>" value="과학∙공학" />&nbsp;
                     <label for="category_id_03_<%=x.id%>">과학∙공학</label>
-                
+
                     <input name="modi_category" type="radio" id="category_id_04_<%=x.id%>" value="예술" />&nbsp;
                     <label for="category_id_04_<%=x.id%>">예술</label>
-               
+
                     <input name="modi_category" type="radio" id="category_id_05_<%=x.id%>" value="기타" />&nbsp;
                     <label for="category_id_05_<%=x.id%>">기타</label>
-                    
-                    &nbsp;&nbsp;<input type="submit" value="변경하기"> 
+
+                    &nbsp;&nbsp;<input type="submit" value="변경하기">
                     <br>
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;<a class="waves-effect waves-light btn" href="/welcome/courses_admin_m/<%=x.id%>">update</a> : <a class="waves-effect waves-light btn" href="/welcome/courses_admin_d/<%=x.id%>">delete</a>
                     <br>
@@ -41,6 +41,6 @@
             <br>
             </div>
         <%end%>
-        
+
     <a href="/">main 화면</a>
 </div>
