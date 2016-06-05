@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20160518121626) do
     t.string   "user_name",                           null: false
     t.string   "nick_name",                           null: false
     t.string   "identify_type",                       null: false
-    t.string   "matching_number",                     null: false
+    t.integer  "matching_number",                     null: false
   end
 
   add_index "ppusers", ["email"], name: "index_ppusers_on_email", unique: true
