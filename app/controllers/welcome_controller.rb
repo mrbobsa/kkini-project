@@ -105,6 +105,9 @@ class WelcomeController < ApplicationController
   def course_study
   end
 
+  def course_question
+  end
+  
   def my_page
   end
 

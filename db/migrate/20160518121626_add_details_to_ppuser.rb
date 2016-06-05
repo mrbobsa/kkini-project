@@ -13,13 +13,13 @@ class AddDetailsToPpuser < ActiveRecord::Migration
       ppuser.nick_name = ppuser.created_at
       ppuser.identify_type = ppuser.created_at
       ppuser.matching_number = ppuser.created_at
-      ppuser.save!
+      ppuser.save
     end
  
     change_column :ppusers, :user_name, :string, :null => false
     change_column :ppusers, :nick_name, :string, :null => false
     change_column :ppusers, :identify_type, :string, :null => false
-    change_column :ppusers, :matching_number, :string, :null => false
+    change_column :ppusers, :matching_number, :integer, :null => false
     
   end
   
