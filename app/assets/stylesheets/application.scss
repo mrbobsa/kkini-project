@@ -30,7 +30,8 @@ nav {
   &.opaque {
     opacity:1; background-color:#FFFFFF;
     border-bottom-style: solid;
-    border-color: #94DDCE;
+    /*border-color: #94DDCE;*/
+    box-shadow:0 0 5px rgba(225, 225, 225, .3);
     a {
       color:#4c9994;
     }
