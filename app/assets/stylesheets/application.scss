@@ -28,7 +28,9 @@ nav {
   opacity:1;transition:background-color 0.3s; background-color:transparent;
 
   &.opaque {
-    opacity:1; background-color:#E6E6E6;
+    opacity:1; background-color:#FFFFFF;
+    border-bottom-style: solid;
+    border-color: #94DDCE;
     a {
       color:#4c9994;
     }
