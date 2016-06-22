@@ -24,7 +24,7 @@
 
 <!--내가 듣고 있는 강의들-->
 <%if ppuser_signed_in? %>
-<nav style="background-color:darkslategray;">
+<nav style="background-color:#4C9994;">
 </nav>
 
 <div class="navopc-endchange" id="index-banner"  style="background-image: url(/assets/bg_img_mountain.png);
@@ -37,10 +37,10 @@
 
     <div class="row" style="padding-top: 25px;">
       <div class="col s12 m6">
-        <h5 class="header teal-text" style="font-size: 20px; padding-left: 85px;">패쓰패쓰에 돌아온걸 화녕행</h5>
+        <h5 class="header teal-text" style="font-size: 20px; padding: 0;">패쓰패쓰에 돌아온걸 화녕행</h5>
       </div>
-      <div class="col s6 m4"><h5 class="header right black-text" style="font-size: 20px;"><%= current_ppuser.email%> 님</h5></div>
-      <div class="col s6 m2">
+      <div class="col s8 m4" style="float: right;"><h5 class="header right black-text" style="font-size: 20px; float: right;"><%= current_ppuser.email%> 님</h5></div>
+      <div class="col s2 m1" style="float: right;">
         <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">perm_identity</i></a>
       </div>
     </div>
